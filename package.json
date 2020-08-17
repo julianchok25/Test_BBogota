@@ -1,0 +1,29 @@
+{
+  "name": "Test_BBogota",
+  "version": "1.0.0",
+  "description": "Given a model, create a Restful API.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianchok25/Test_BBogota.git"
+  },
+  "keywords": [],
+  "author": "Julian Villegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianchok25/Test_BBogota/issues"
+  },
+  "homepage": "https://github.com/julianchok25/Test_BBogota#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
