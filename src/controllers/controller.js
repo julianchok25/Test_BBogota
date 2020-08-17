@@ -43,4 +43,39 @@ const createPerson = async (req, response) => {
   });
 };
 
-module.exports = { getPerson, createPerson };
+const getPersonById = async (req, response) => {
+  const res = await pool.query("SELECT * FROM person WHERE id = $1", [
+    req.params.id,
+  ]);
+  response.json(res.rows);
+};
+
+const updatePerson = async (req, response) => {
+  // Here, we need the ID and body data
+  const id = req.params.id;
+  const { fullname, birth } = req.body;
+  const res = await pool.query(
+    "UPDATE person SET fullname = $1, birth = $2 WHERE id = $3",
+    [fullname, birth, id]
+  );
+  console.log(res);
+  response.json("Person updated succesfully");
+};
+
+const deletePerson = async (req, response) => {
+  const res = await pool.query("DELETE FROM person WHERE id = $1", [
+    req.params.id,
+  ]);
+  console.log(res);
+  // Using template literals
+  response.json(`Person ${req.params.id} Deleted Succesfully`);
+  // response.send("USER DELETED " + req.params.id);
+};
+
+module.exports = {
+  getPerson,
+  getPersonById,
+  createPerson,
+  updatePerson,
+  deletePerson,
+};

@@ -7,10 +7,11 @@ Given the following model, create a Restful API.
 
 - Backend:
   - NodeJS
+  - Route handling: Express
   - PostgreSQL
 - Frontend:
   - AngularJS
 - Container:
-  - Docker
+  - Docker with compose
 - Automation:
   - Circle CI
