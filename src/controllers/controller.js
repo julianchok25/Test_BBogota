@@ -28,6 +28,12 @@ const getPerson = (req, response) => {
 };
 
 const createPerson = async (req, response) => {
+  if (!req.body.fullname) {
+    response.status(400).send({
+      message: "Content can not be empty!",
+    });
+    return;
+  }
   // Using destructuring
   const { fullname, birth } = req.body;
   const res = await pool.query(
