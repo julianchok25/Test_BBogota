@@ -1,6 +1,3 @@
-CREATE DATABASE banco
--bogota;
-
 DROP TABLE IF EXISTS person;
 CREATE TABLE person
 (
