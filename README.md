@@ -53,6 +53,22 @@ $ docker-compose up -d
 
 ![docker_containers](https://i.imgur.com/GsGsnc1.jpg)
 
+- As you can see, the port 8080 and 5432 are opened by the docker-proxy service.
+
+```sh
+$ netstat -tlpn
+```
+
+- To see active containers and how the ports are mapped, run the following command:
+
+```sh
+$ docker ps
+```
+
+As you can see, for the db service, the Docker host port 5432 is mapped to the container TCP port 5432.
+For the pgadmin service, the Docker host port 8080 is mapped to the container TCP port 80.
+![docker_ps](https://i.imgur.com/LVm4Cqfm.jpg)
+
 - You can test in web browser the pgadmin application typing: **http://localhost:8080**
   Access with **julian.villegasplus@gmail.com** as username and **admin** as password:
 
