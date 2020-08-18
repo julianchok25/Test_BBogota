@@ -27,16 +27,16 @@ Download and install **node.js** runtime with LTS stable current version and **d
 1. Clone this repository and acces to the project.
 
 ```sh
-git clone https://github.com/julianchok25/Test_BBogota
-cd Test_BBogota
+$ git clone https://github.com/julianchok25/Test_BBogota
+$ cd Test_BBogota
 ```
 
 2. Open your text editor and install node dependencies in the local node_modules folder.
 
-   - Using a terminal, either bash shell, zsh for linux or powershell for windows, type:
+- Using a terminal, either bash shell, zsh for linux or powershell for windows, type:
 
 ```sh
-npm install
+$ npm install
 ```
 
 - Now, you'll see the next structure:
@@ -46,7 +46,7 @@ npm install
 3. Deploy postgreSql and PgAdmin4 with docker compose.
 
 ```sh
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 - The services should start in the background. Postgresql is running on port 5432 and pgadmin4 on 8080. Everything in localhost.
@@ -58,7 +58,7 @@ docker-compose up -d
 
 ![pgadmin_login](https://i.imgur.com/JrN4J5b.jpg)
 
-![pgadmin_structure](https://i.imgur.com/WOyC1oF.jpg)
+![pgadmin_structure](https://i.imgur.com/WOyC1oFm.jpg)
 
 - Now, you can see the database created in the left tree panel. But we don't still have data. Let's import with docker options..!!
 
