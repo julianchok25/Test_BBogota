@@ -67,7 +67,7 @@ $ docker ps
 
 As you can see, for the db service, the Docker host port 5432 is mapped to the container TCP port 5432.
 For the pgadmin service, the Docker host port 8080 is mapped to the container TCP port 80.
-![docker_ps](https://i.imgur.com/LVm4Cqfm.jpg)
+![docker_ps](https://i.imgur.com/LVm4Cqf.jpg)
 
 - You can test in web browser the pgadmin application typing: **http://localhost:8080**
   Access with **julian.villegasplus@gmail.com** as username and **admin** as password:
