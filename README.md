@@ -85,7 +85,7 @@ $ docker cp ./database/database.sql test_bbogota_db_1:/var/lib/postgresql/data/d
 $ docker exec -u root test_bbogota_db_1 psql banco-bogota admin -f var/lib/postgresql/data/database.sql
 ```
 
-> NOTE: if you use Windows, probably you should use **winpty** before docker command
+> NOTE: if you use Git bash shell, probably you should use **winpty** before docker command
 
 - Here it is in generic form:
 
