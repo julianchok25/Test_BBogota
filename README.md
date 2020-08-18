@@ -106,6 +106,12 @@ banco-bogota=# select * from person;
 
 ![query_table](https://i.imgur.com/Z4eVq1y.jpg)
 
+6. Finally, run the server:
+
+```sh
+$ npm run dev
+```
+
 ## Next Steps
 
 Backend is Ready.!! Now, let's go to this repository: **https://github.com/julianchok25/Angular10Crud** to download and deploy the Frontend side.
