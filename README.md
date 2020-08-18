@@ -106,11 +106,18 @@ banco-bogota=# select * from person;
 
 ![query_table](https://i.imgur.com/Z4eVq1y.jpg)
 
-6. Finally, run the server:
+6. Finally, run the server. **nodemon** dependency will be listening for any request to the server.
 
 ```sh
 $ npm run dev
 ```
+
+![run_server](https://i.imgur.com/bzD7isY.jpg)
+
+## End points
+
+In Postman client, you can test de API endpoints from **http://localhost:3000**
+![end_points](https://i.imgur.com/fL8Ppqv.jpg)
 
 ## Next Steps
 
